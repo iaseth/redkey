@@ -1,3 +1,100 @@
+body {
+  background-color: #ccc;
+  padding: 0px;
+  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+}
 
+div.keys {
+  max-width: 1000px;
+  padding: 10px 12px;
+  margin: auto;
+  background-color: #aaa;
+  border: 2px solid #444;
+  margin-top: 100px;
+}
+div.keys > div.row {
+  text-align: center;
+  padding: 4px;
+}
+div.keys > div.row > div.key {
+  margin-left: 4px;
+  box-sizing: content-box;
+  display: inline-block;
+  vertical-align: top;
+  height: 50px;
+  background-color: #222;
+  color: #fff;
+  border-radius: 4px;
+  border: 4px solid transparent;
+}
+div.keys > div.row > div.key > span {
+  display: block;
+}
+div.keys > div.row > div.key.single, div.keys > div.row > div.key.double {
+  width: 50px;
+}
+div.keys > div.row > div.key.single > span, div.keys > div.row > div.key.double > span {
+  text-align: center;
+}
+div.keys > div.row > div.key.single > span {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 5px;
+}
+div.keys > div.row > div.key.double > span.up {
+  text-align: left;
+  font-size: 14px;
+  padding: 0px 4px;
+}
+div.keys > div.row > div.key.double > span.main {
+  font-size: 18px;
+  font-weight: bold;
+}
+div.keys > div.row > div.key.wide > span {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 15px 5px;
+}
+div.keys > div.row > div.key.wide.backspace > span {
+  padding-left: 10px;
+}
+div.keys > div.row > div.key.wide.tab > span {
+  padding-right: 54px;
+}
+div.keys > div.row > div.key.wide.capslock > span {
+  padding-right: 30px;
+}
+div.keys > div.row > div.key.wide.enter > span {
+  padding-left: 60px;
+}
+div.keys > div.row > div.key.wide.shift-left > span {
+  padding-right: 95px;
+}
+div.keys > div.row > div.key.wide.shift-right > span {
+  padding-left: 95px;
+}
+div.keys > div.row:nth-child(5) > div.key {
+  width: 50px;
+  text-align: center;
+}
+div.keys > div.row:nth-child(5) > div.key.alt {
+  width: 65px;
+}
+div.keys > div.row:nth-child(5) > div.key.spacebar {
+  width: 315px;
+}
+div.keys > div.row:nth-child(5) > div.key.vertical-arrows {
+  background-color: transparent;
+  border-width: 0px;
+  width: 55px;
+}
+div.keys > div.row:nth-child(5) > div.key.vertical-arrows > span {
+  background-color: #222;
+  height: 26px;
+  padding: 0px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+}
 
 /*# sourceMappingURL=redkey.css.map */

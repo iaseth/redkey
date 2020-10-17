@@ -1,0 +1,96 @@
+
+$key-background-color: #222;
+
+body {
+	background-color: #ccc;
+	padding: 0px;
+	margin: 0px;
+	font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+}
+
+div.keys {
+	max-width: 1000px;
+	padding: 10px 12px;
+	margin: auto;
+	background-color: #aaa;
+	border: 2px solid #444;
+	margin-top: 100px;
+	& > div.row {
+		text-align: center;
+		padding: 4px;
+		& > div.key {
+			margin-left: 4px;
+			box-sizing: content-box;
+			display: inline-block;
+			vertical-align: top;
+			height: 50px;
+			background-color: $key-background-color;
+			color: #fff;
+			border-radius: 4px;
+			border: 4px solid transparent;
+			& > span {
+				display: block;
+			}
+			&.single, &.double {
+				width: 50px;
+				& > span {
+					text-align: center;
+				}
+			}
+			&.single {
+				& > span {
+					font-size: 20px;
+					font-weight: bold;
+					padding: 10px 5px;
+				}
+			}
+			&.double {
+				& > span.up {
+					text-align: left;
+					font-size: 14px;
+					padding: 0px 4px;
+				}
+				& > span.main {
+					font-size: 18px;
+					font-weight: bold;
+				}
+			}
+			&.wide {
+				& > span {
+					font-size: 14px;
+					font-weight: bold;
+					padding: 15px 5px;
+				}
+				&.backspace > span {padding-left: 10px;}
+				&.tab > span {padding-right: 54px;}
+				&.capslock > span {padding-right: 30px;}
+				&.enter > span {padding-left: 60px;}
+				&.shift-left > span {padding-right: 95px;}
+				&.shift-right > span {padding-left: 95px;}
+			}
+		}
+
+		&:nth-child(5) {
+			& > div.key {
+				width: 50px;
+				text-align: center;
+				&.alt {width: 65px;}
+				&.spacebar {width: 315px;}
+				&.vertical-arrows {
+					background-color: transparent;
+					border-width: 0px;
+					width: 55px;
+					& > span {
+						background-color: $key-background-color;
+						height: 26px;
+						padding: 0px;
+						margin-bottom: 6px;
+						border-radius: 4px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
